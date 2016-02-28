@@ -17,6 +17,8 @@ using System.Collections;
 public class UIMgr
 {
     private Transform m_uiRoot;
+    private Transform m_canvas;
+
     private UILogin m_uiLogin;
     public UILogin UILogIn
     {
@@ -43,6 +45,19 @@ public class UIMgr
             return m_uiFight;
         }
     }
+    private UIEctypeMap m_uiEctypeMap;
+    public UIEctypeMap UIEctypeMap
+    {
+        get
+        {
+            if (m_uiEctypeMap == null)
+            {
+                m_uiEctypeMap = LoadUI<UIEctypeMap>();
+            }
+
+            return m_uiEctypeMap;
+        }
+    }
     public UIMgr()
     {
         InitUI();
@@ -50,21 +65,38 @@ public class UIMgr
     private void InitUI()
     {
         m_uiRoot = GameMgr.Instance.transform.Find("UI");
-        Transform canvas = m_uiRoot.Find("Canvas");
+        m_canvas = m_uiRoot.Find("Canvas");
 
 
         GameObject goLogin = GameMgr.Instance.m_resMgr.LoadResource("Login");
         goLogin.name = "UILogin";
-        goLogin.transform.SetParent(canvas, false);
+        goLogin.transform.SetParent(m_canvas, false);
 
         GameObject goFight = GameMgr.Instance.m_resMgr.LoadResource("Fight");
         goFight.name = "UIFight";
-        goFight.transform.SetParent(canvas, false);
+        goFight.transform.SetParent(m_canvas, false);
 
-        for ( int i = 0; i < canvas.childCount; i++ )
+        GameObject goEctype = GameMgr.Instance.m_resMgr.LoadResource("EctypeMap");
+        goEctype.name = "UIEctypeMap";
+        goEctype.transform.SetParent(m_canvas, false);
+
+        for (int i = 0; i < m_canvas.childCount; i++)
         {
-            canvas.GetChild(i).gameObject.SetActive(false);
+            m_canvas.GetChild(i).gameObject.SetActive(false);
         }
+    }
+    public GameObject GetActive()
+    {
+        for (int i = 0; i < m_canvas.childCount; i++)
+        {
+            GameObject obj = m_canvas.GetChild(i).gameObject; 
+            if (obj.activeSelf)
+            {
+                return obj;
+            }
+        }
+
+        return null;
     }
     T LoadUI<T>() where T : UIBase
     {

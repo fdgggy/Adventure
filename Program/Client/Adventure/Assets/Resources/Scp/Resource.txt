@@ -4,3 +4,4 @@ Login,,Prefabs/Layout/UILogin
 BattleScene,,Prefabs/Scenes/BattleScene
 monster1,,Prefabs/Actors/monster1
 Fight,,Prefabs/Layout/UIFight
+EctypeMap,,Prefabs/Layout/UIEctypeMap

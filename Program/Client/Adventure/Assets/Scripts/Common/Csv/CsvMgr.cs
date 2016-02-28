@@ -24,6 +24,7 @@ public class CsvMgr
     private EctypeCsv m_EctypeCsv = null;
     private EctypeMonsterMgr m_monsterCsvMgr = null;
     private SkillCsv m_skillCsv = null;
+    private LevelCsv m_levelDsv = null;
     public ResourceCsv mResourceCsv { get { return m_ResourceCsv; } }
     public SceneCsv mSceneCsv { get { return m_SceneCsv; } }
     public MonsterCsv mMonsterCsv { get { return m_MonsterCsv; } }
@@ -33,6 +34,7 @@ public class CsvMgr
         get { return m_monsterCsvMgr; }
     }
     public SkillCsv mSkillCsv { get { return m_skillCsv; } }
+    public LevelCsv mLevelCsv { get { return m_levelDsv; } }
     public CsvMgr(string rootPath)
     {
         RootPath = rootPath;
@@ -42,6 +44,7 @@ public class CsvMgr
         m_EctypeCsv = new EctypeCsv();
         m_monsterCsvMgr = new EctypeMonsterMgr();
         m_skillCsv = new SkillCsv();
+        m_levelDsv = new LevelCsv();
 
         Init();
     }
@@ -52,6 +55,7 @@ public class CsvMgr
         LoadSchemeByResPath("Scp/Ectype", mEctypeCsv);
         LoadSchemeByResPath("Scp/Monster", mMonsterCsv);
         LoadSchemeByResPath("Scp/Skill", mSkillCsv);
+        LoadSchemeByResPath("Scp/Level", mLevelCsv);
     }
     public void LoadSchemeByResPath(string path, ISchemeUpdateSink sink)
     {

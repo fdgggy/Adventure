@@ -47,13 +47,8 @@ public class UILogin : UIBase
     }
     private void OnLogoFadeout()
     {
-        EnterEctypeContext ctx = new EnterEctypeContext();
-        ctx.m_EctypeCreateData.type = EctypeUseType.Normal;
-        ctx.m_EctypeCreateData.dwEctypeID = 101;
-        ctx.m_EctypeCreateData.bGuide = false;
-        ctx.m_EctypeCreateData.sceneID = "BattleScene";
-        GameMgr.Instance.m_clientMgr.EnterEctype(ctx);
-
-        this.gameObject.SetActive(false);
+        CurChapterInfor chapter = new CurChapterInfor { chapter = 1, diffDegree = 0, level = 1};    //从服务器取
+        GameMgr.Instance.m_uiMgr.UIEctypeMap.CurChapter = chapter;
+        Hide();
     }
 }
