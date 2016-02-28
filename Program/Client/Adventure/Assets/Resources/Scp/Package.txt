@@ -1,0 +1,2 @@
+资源包Id,资源包名字
+string,string

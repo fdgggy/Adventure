@@ -1,0 +1,3 @@
+场景ID,场景名称,场景资源ID,场景背景音乐ID
+string,string,string,string
+BattleScene,BattleScene,BattleScene,BattleScene

@@ -1,0 +1,2 @@
+音效名称,音效资源ID,音量
+string,string,float

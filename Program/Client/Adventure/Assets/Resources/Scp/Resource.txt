@@ -1,0 +1,6 @@
+﻿资源ID,包ID,相对路径
+string,string,string
+Login,,Prefabs/Layout/UILogin
+BattleScene,,Prefabs/Scenes/BattleScene
+monster1,,Prefabs/Actors/monster1
+Fight,,Prefabs/Layout/UIFight

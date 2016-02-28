@@ -1,0 +1,4 @@
+Id,名字,头像ID,资源ID,出生效果ID,死亡效果ID,受击表现效果ID,庆祝效果ID,技能id,血量,等级,类型,移动速度
+int,string,string,string,int,int,int,int,int,int,int,int,float
+1,Mine,AD,monster1,,,,,2,1000,1,1,6
+1001,AD,AD,monster1,,,,,1,1000,1,2,6

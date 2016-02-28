@@ -1,0 +1,3 @@
+副本ID,场景ID,等级,名称,摆怪ID
+int,string,int,string,int
+101,BattleScene,1,冒险,101

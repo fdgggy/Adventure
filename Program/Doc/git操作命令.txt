@@ -1,0 +1,16 @@
+多人开发版本管理
+A开发   B开发
+
+1.A建立仓库，把B拉入Collaborators
+2.B注册Github
+3.git config --global user.name "MarsW"
+4.git config --global user.email "ymjh11436@gmail.com"
+5.git Clone  https://github.com/DIOSZHOU/Adventure.git    //Clone A仓库到本地 
+6.添加本地文件   
+  git add .
+  git status                     //  可以查看git当前状态
+  git commit -m "first commit"   //" "里面填写提交记录
+  git push origin master         //然后输入自己的github账号，密码，验证通过后，上传，完毕后即成功上传到A的仓库
+
+7.git pull 						//更新代码
+  
