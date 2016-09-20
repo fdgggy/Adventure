@@ -22,7 +22,7 @@ public class SpriteToPrefab : AssetToPrefab
     {
         if (filetype.Equals(".jpg") || filetype.Equals(".png"))
         {
-            Sprite sprite = Resources.LoadAssetAtPath<Sprite>(src);     //src和des Build的时候路径必须是Asset开头，全路径不行
+            Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(src);     //src和des Build的时候路径必须是Asset开头，全路径不行
             if (sprite == null)
             {
                 Debug.Log("SpriteToPrefab::BuildPrefab  确保UI已是精灵");

@@ -63,11 +63,11 @@ public static class GameUtil
     {
         string path;
 #if UNITY_ANDROID  
-		path = "jar:file://" + Application.dataPath + "!/assets/";  
+		path = "file://" + Application.persistentDataPath + "/assets/";  
 #elif UNITY_IPHONE  
 		path = Application.dataPath + "/Raw/";  
 #elif UNITY_STANDALONE_WIN || UNITY_EDITOR
-        path = "file://" + Application.dataPath + "/StreamingAssets/";
+        path = Application.dataPath + "/StreamingAssets/";
 #else  
 		path = string.Empty;  
 #endif

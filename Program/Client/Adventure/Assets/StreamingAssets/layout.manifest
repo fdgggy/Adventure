@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 2395228844
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d693f5ee602b3de96af184aa08073a22
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3ac775b64d14e06fa651cd6f79cc7b3d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1573420865, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0eb3fd054c6732a4ab0001c55faf7fea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5bdeaf734cf5daf4a80c8281e98d67d8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/Prefabs/Layout/UIEctypeMap.prefab
+- Assets/Resources/Prefabs/Layout/UILogin.prefab
+- Assets/Resources/Prefabs/Layout/UIFight.prefab
+Dependencies: []
